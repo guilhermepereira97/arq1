@@ -29,7 +29,7 @@ package p_MRstd is
     type inst_type is  
             ( ADDU, SUBU, AAND, OOR, XXOR, NNOR, SSLL, SLLV, SSRA, SRAV, SSRL, SRLV,
             ADDIU, ANDI, ORI, XORI, LUI, LBU, LW, SB, SW, SLT, SLTU, SLTI,
-            SLTIU, BEQ, BGEZ, BLEZ, BNE, J, JAL, JALR, JR, MULTU, DIVU, MFHI, MFLO, invalid_instruction);
+            SLTIU, BEQ, BGEZ, BLEZ, BNE, J, JAL, JALR, JR, MULTU, DIVU, MFHI, MFLO, NOP, invalid_instruction);
  
     type microinstruction is record
             CY1:   std_logic;       -- command of the first stage
@@ -159,7 +159,8 @@ begin
     menorU <=  '1' when op1 < op2 else '0';
     menorS <=  '1' when ieee.Std_Logic_signed."<"(op1,  op2) else '0' ; -- signed
     
-    outalu <=  
+    outalu <= 
+        P 
         op1 - op2                                when  op_alu=SUBU                     else
         op1 and op2                              when  op_alu=AAND  or op_alu=ANDI     else 
         op1 or  op2                              when  op_alu=OOR   or op_alu=ORI      else 
@@ -395,7 +396,8 @@ begin
     -- BLOCK (1/3) - INSTRUCTION DECODING and ALU operation definition.
     -- This block generates 1 Output Function of the Control Unit
     ----------------------------------------------------------------------------------------
-    i <=   ADDU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100001" else
+    i <=   NOP when IR(31 downto 0)=x"0000000000000000" else
+	   ADDU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100001" else
            SUBU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100011" else
            AAND   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100100" else
            OOR    when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100101" else
@@ -463,12 +465,12 @@ begin
     uins.wpc   <= '1' when PS=Swbk or PS=Sst or PS=Ssalta or (PS=Salu and ((i=MULTU and end_mult='1')
 			or (i=DIVU and end_div='1'))) else  '0';
 
-    uins_int.whilo   <= '1' when (PS=Salu and end_mult='1' and i=MULTU)
+    uins.whilo   <= '1' when (PS=Salu and end_mult='1' and i=MULTU)
 			  or (PS=Salu and end_div='1' and i=DIVU) 
 			else  '0';
 
-    uins_int.rst_md   <= '1' when PS=Sreg and (i=MULTU or i=DIVU) else  '0';
-    uins <= uins_int; -- rever, pode dar merda
+    uins.rst_md   <= '1' when PS=Sreg and (i=MULTU or i=DIVU) else  '0';
+    --uins <= uins_int; -- rever, pode dar merda
   
     ---------------------------------------------------------------------------------------------
     -- BLOCK (3/3) - Sequential part of the control unit - two processes implementing the
@@ -570,4 +572,4 @@ architecture MRstd of MRstd is
      rw <= uins.rw; 
      bw <= uins.bw;
      
-end MRstd;
+end MRstd;	

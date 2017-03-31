@@ -29,7 +29,7 @@ package p_MRstd is
     type inst_type is  
             ( ADDU, SUBU, AAND, OOR, XXOR, NNOR, SSLL, SLLV, SSRA, SRAV, SSRL, SRLV,
             ADDIU, ANDI, ORI, XORI, LUI, LBU, LW, SB, SW, SLT, SLTU, SLTI,
-            SLTIU, BEQ, BGEZ, BLEZ, BNE, J, JAL, JALR, JR, MULTU, DIVU, MFHI, MFLO, invalid_instruction);
+            SLTIU, BEQ, BGEZ, BLEZ, BNE, J, JAL, JALR, JR, MULTU, DIVU, MFHI, MFLO, NOP, invalid_instruction);
  
     type microinstruction is record
             CY1:   std_logic;       -- command of the first stage
@@ -159,7 +159,8 @@ begin
     menorU <=  '1' when op1 < op2 else '0';
     menorS <=  '1' when ieee.Std_Logic_signed."<"(op1,  op2) else '0' ; -- signed
     
-    outalu <=  
+    outalu <= 
+        P 
         op1 - op2                                when  op_alu=SUBU                     else
         op1 and op2                              when  op_alu=AAND  or op_alu=ANDI     else 
         op1 or  op2                              when  op_alu=OOR   or op_alu=ORI      else 
@@ -395,7 +396,8 @@ begin
     -- BLOCK (1/3) - INSTRUCTION DECODING and ALU operation definition.
     -- This block generates 1 Output Function of the Control Unit
     ----------------------------------------------------------------------------------------
-    i <=   ADDU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100001" else
+    i <=   NOP when IR(31 downto 0)=x"0000000000000000" else
+	   ADDU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100001" else
            SUBU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100011" else
            AAND   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100100" else
            OOR    when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100101" else
@@ -452,7 +454,7 @@ begin
                 
     uins.wmdr  <= '1' when PS=Sld            else '0';
   
-    uins.wreg   <= '1' when PS=Swbk or (PS=Ssalta and (i=JAL or i=JALR)) else   '0';
+    uins.wreg   <= '1' when (PS=Swbk and i/=NOP) or (PS=Ssalta and (i=JAL or i=JALR)) else   '0';
    
     uins.rw    <= '0' when PS=Sst            else  '1';
                   
