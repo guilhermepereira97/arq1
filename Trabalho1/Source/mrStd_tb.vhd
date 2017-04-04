@@ -166,7 +166,7 @@ architecture cpu_tb of cpu_tb is
     signal Dce_n, Dwe_n, Doe_n, Ice_n, Iwe_n, Ioe_n, ck, rst, rstCPU, 
            go_i, go_d, ce, rw, bw: std_logic;
     
-    file ARQ : TEXT open READ_MODE is "teste_inst.txt";
+    file ARQ : TEXT open READ_MODE is "somavet_dump.txt";
  
 begin
            

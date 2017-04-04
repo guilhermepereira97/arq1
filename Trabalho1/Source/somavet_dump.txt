@@ -1,0 +1,18 @@
+ Address    Code        Basic                     Source
+
+0x00400000  0x3c011001  lui $1,4097           4    main:   la $t0, Vetor #carrega vetor para t0
+0x00400004  0x34280000  ori $8,$1,0                
+0x00400008  0x3c011001  lui $1,4097           5    	la $s1, Tam #carrega o endereço do tamanho do vetor
+0x0040000c  0x34310014  ori $17,$1,20              
+0x00400010  0x8e300000  lw $16,0($17)         6    	lw $s0,0($s1) #carrega o valor do tamanho do vetor
+0x00400014  0x340a0000  ori $10,$0,0          7    	ori $t2, $zero, 0 #index
+0x00400018  0x340b0003  ori $11,$0,3          8    	ori $t3, $zero, 3 #cosntante
+0x0040001c  0x11500006  beq $10,$16,6         10   loop:	beq $t2,$s0 , fim #testa fim do loop
+0x00400020  0x8d0c0000  lw $12,0($8)          11   	lw $t4, 0($t0) #carrega proximo elemento do vetor
+0x00400024  0x018b6821  addu $13,$12,$11      12   	addu $t5, $t4, $t3 #t5 = t4 + t3
+0x00400028  0xad0d0000  sw $13,0($8)          13   	sw $t5, 0($t0) #armazena resultado na respectiva posicao do vetor
+0x0040002c  0x254a0001  addiu $10,$10,1       14   	addiu $t2, $t2, 1 #incrementa 
+0x00400030  0x25080004  addiu $8,$8,4         15   	addiu $t0, $t0, 4 #aponta para a proxima posicao do vetor
+0x00400034  0x08100007  j 0x0040001c          16   	j loop #volta para o laÃ§o
+0x00400038  0x2402000a  addiu $2,$0,10        18   	li $v0, 10 #finaliza o programa
+0x0040003c  0x0000000c  syscall               19   	syscall #finaliza o programa

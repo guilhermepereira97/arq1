@@ -18,88 +18,92 @@ n@_opt
 OL;O;10.3c;59
 R0
 Ealu
-Z1 w1490910112
-Z2 DPx4 work 7 p_mrstd 0 22 C[EGjnWE`G[JR1Ucgm31C0
+Z1 w1491168752
+Z2 DPx4 work 7 p_mrstd 0 22 lTV5?7Y1^^1@RX2aceAez3
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z7 d/home/15104097/Desktop/MIPS_MC
-Z8 8mips_multiciclo.vhd
-Z9 Fmips_multiciclo.vhd
+Z7 dC:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source
+Z8 8C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mips_multiciclo.vhd
+Z9 FC:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mips_multiciclo.vhd
 l0
 L148
-Vc<eHNBL@zX[8a[X;>8?Qd3
+VaaXJBg3DEIQW;<SBU<kEL3
 !s100 EbW6kkN5IB@K<[>Czn08`1
-Z10 OL;C;10.3c;59
+Z10 OP;C;10.4a;61
 32
-Z11 !s110 1490910124
+Z11 !s110 1491274210
 !i10b 1
-Z12 !s108 1490910124.062775
-Z13 !s90 -reportprogress|300|mips_multiciclo.vhd|
-Z14 !s107 mips_multiciclo.vhd|
-!i113 0
-Z15 tExplicit 1
+Z12 !s108 1491274210.000000
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mips_multiciclo.vhd|
+Z14 !s107 C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mips_multiciclo.vhd|
+!i113 1
+Z15 o-work work -O0
+Z16 tExplicit 1
 Aalu
-Z16 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z17 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R2
 R3
 R4
 R5
 R6
-Z17 DEx4 work 3 alu 0 22 c<eHNBL@zX[8a[X;>8?Qd3
-32
-R11
+Z18 DEx4 work 3 alu 0 22 aaXJBg3DEIQW;<SBU<kEL3
 l157
 L155
-V1JL2:dAKZ]oej^E@eGbI[3
+VXMDz9;4;l4TYh0R7Un]K50
 !s100 IMA`c6KbbYWD:o;XENmJ@0
 R10
+32
+R11
 !i10b 1
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Paux_functions
 R5
 R6
-Z18 w1490908613
+Z19 w1491274193
 R7
-Z19 8mrStd_tb.vhd
-Z20 FmrStd_tb.vhd
+Z20 8C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mrStd_tb.vhd
+Z21 FC:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mrStd_tb.vhd
 l0
 L17
-VmQPIAoQV8:c_hELJVBCDB0
+VCm8]=F]<bDc5G4=2WI5ZJ3
 !s100 EU;inPHEn`Mje3nn5jze02
 R10
 32
 b1
-Z21 !s110 1490910139
+R11
 !i10b 1
-Z22 !s108 1490910139.692504
-Z23 !s90 -reportprogress|300|mrStd_tb.vhd|
-Z24 !s107 mrStd_tb.vhd|
-!i113 0
+R12
+Z22 !s90 -reportprogress|30|-work|work|C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mrStd_tb.vhd|
+Z23 !s107 C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mrStd_tb.vhd|
+!i113 1
 R15
+R16
 Bbody
-Z25 DPx4 work 13 aux_functions 0 22 mQPIAoQV8:c_hELJVBCDB0
+Z24 DPx4 work 13 aux_functions 0 22 Cm8]=F]<bDc5G4=2WI5ZJ3
 R5
 R6
-32
-R21
 l0
 L36
-V^?Um2k81zmk9d2XUKDJCm2
-!s100 0;AiaU;mIJV6c2BU:Na_F0
+Z25 VbmS1Go08nG3;EXgR4KUJ:1
+Z26 !s100 0;AiaU;mIJV6c2BU:Na_F0
 R10
+32
+R11
 !i10b 1
+R12
 R22
 R23
-R24
-!i113 0
+!i113 1
 R15
-nbody
+R16
+Z27 nbody
 Econtrol_unit
 R1
 R2
@@ -110,7 +114,7 @@ R8
 R9
 l0
 L379
-VkX:T5eVN[[eN;Y:MOJHVd0
+Va7AIBTP@eU4e7VFQnZMWn1
 !s100 H0g?@T_Li_lYnP<hfJ<l?3
 R10
 32
@@ -119,77 +123,81 @@ R11
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Acontrol_unit
 R2
 R5
 R6
-Z26 DEx4 work 12 control_unit 0 22 kX:T5eVN[[eN;Y:MOJHVd0
-32
-R11
+Z28 DEx4 work 12 control_unit 0 22 a7AIBTP@eU4e7VFQnZMWn1
 l392
 L387
-VnXjV3>zc3aAzoNf50Wf4N3
-!s100 QhPXeEU9n5e?:gdQ`z_I63
+VB2KWL@l57eignk0N3n`Si2
+!s100 5PzjTdJK[Eo1B=C]U2blT0
 R10
+32
+R11
 !i10b 1
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Ecpu_tb
-R18
-R25
+R19
+R24
 R3
 R4
 R5
 R6
 R7
-R19
 R20
+R21
 l0
 L158
-V2`0o9`O^gFQz4VLWi2L5W0
+V;Vn=_7j;7S9B7Emn_@50H0
 !s100 ]M58d<`TemlY?C:bKQNlW0
 R10
 32
-R21
+R11
 !i10b 1
+R12
 R22
 R23
-R24
-!i113 0
+!i113 1
 R15
+R16
 Acpu_tb
 R2
-Z27 DEx4 work 5 mrstd 0 22 ?Q;JN<0j]DPDYRgk;5=nV2
-Z28 DEx4 work 7 ram_mem 0 22 8KQg9Ejen7:^N>dXPK=Pc3
-R25
+Z29 DEx4 work 5 mrstd 0 22 AfZ;80OK<XPbR]<hU[^]92
+Z30 DEx4 work 7 ram_mem 0 22 b;=AX=znSJhE1d2Q>iC;92
+R24
 R3
 R4
 R5
 R6
-DEx4 work 6 cpu_tb 0 22 2`0o9`O^gFQz4VLWi2L5W0
-32
-R21
+Z31 DEx4 work 6 cpu_tb 0 22 ;Vn=_7j;7S9B7Emn_@50H0
 l171
 L161
-VSh]Mc4NCPCe=?2ObOkm4J0
-!s100 mdG@bakjB1_<aK^2PdF=z0
+V7:e^XijXP6J<gX3]i^Ifl1
+!s100 C9?[:_OBUXii[Qk05LInK1
 R10
+32
+R11
 !i10b 1
+R12
 R22
 R23
-R24
-!i113 0
+!i113 1
 R15
+R16
 Edatapath
 R1
 R2
 R3
-R16
+R17
 R5
 R6
 R7
@@ -197,7 +205,7 @@ R8
 R9
 l0
 L194
-V3CZ1Og6nNdHg8C<E<0=a82
+V=E0nCZgHH5YehHZAl<RW13
 !s100 KT9K7f`BPcWh>fXzF?V[]0
 R10
 32
@@ -206,77 +214,79 @@ R11
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Adatapath
-Z29 DEx4 work 6 divide 0 22 ZiAFm@FZW<nKBcmDd1oGz1
-Z30 DEx4 work 10 multiplica 0 22 kR`YH8Q:C>A4]_Qz^z?i11
-R17
+Z32 DEx4 work 6 divide 0 22 ^^O^o5N5>e8YVn[YUK:9Q2
+Z33 DEx4 work 10 multiplica 0 22 HSaBFPOGX6j:5YLFmm@em2
+R18
 R4
-Z31 DEx4 work 8 reg_bank 0 22 B>iTc@R4[@C:TjDTEYSYP1
-Z32 DEx4 work 7 regnbit 0 22 3GAV^@e6L>ATdUZgQQQh90
+Z34 DEx4 work 8 reg_bank 0 22 [Ch8LTZ49j5[BW`mWoBKE3
+Z35 DEx4 work 7 regnbit 0 22 =]RB>=o_a<NgT@Dcl<P263
 R2
 R3
-R16
+R17
 R5
 R6
-Z33 DEx4 work 8 datapath 0 22 3CZ1Og6nNdHg8C<E<0=a82
-32
-R11
+Z36 DEx4 work 8 datapath 0 22 =E0nCZgHH5YehHZAl<RW13
 l213
 L206
-VMihT=ljSD4REWD_?`Td:<1
+V>QTELkmg0@G@5>AcAlH8W0
 !s100 :mk@>9S3USGdmj;NCX5OE3
 R10
+32
+R11
 !i10b 1
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Edivide
-Z34 w1448213624
+Z37 w1491012311
 R3
 R4
 R5
 R6
 R7
-Z35 8/home/15104097/Desktop/MIPS_MC/mult_div.vhd
-Z36 F/home/15104097/Desktop/MIPS_MC/mult_div.vhd
+Z38 8C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mult_div.vhd
+Z39 FC:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mult_div.vhd
 l0
 L97
-VZiAFm@FZW<nKBcmDd1oGz1
+V^^O^o5N5>e8YVn[YUK:9Q2
 !s100 =9Pn:glo_f>2`4g5mdPgZ3
 R10
 32
-Z37 !s110 1490908900
+Z40 !s110 1491153502
 !i10b 1
-Z38 !s108 1490908900.505198
-Z39 !s90 -reportprogress|300|-work|work|/home/15104097/Desktop/MIPS_MC/mult_div.vhd|
-Z40 !s107 /home/15104097/Desktop/MIPS_MC/mult_div.vhd|
-!i113 0
-Z41 o-work work
+Z41 !s108 1491153502.000000
+Z42 !s90 -reportprogress|300|-work|work|C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mult_div.vhd|
+Z43 !s107 C:/Users/Guilherme Pereira/Desktop/arq1/Trabalho1/Source/mult_div.vhd|
+!i113 1
 R15
+R16
 Adivide
 R3
 R4
 R5
 R6
-R29
-32
-R37
+R32
 l116
 L107
-VYDZhkJ5B;mIG=Sd_XlYNZ3
+VZZnB<AocG1CTz?C1l_B>h3
 !s100 8X4H=XNhMORAY9:fm@oaV0
 R10
-!i10b 1
-R38
-R39
+32
 R40
-!i113 0
+!i10b 1
 R41
+R42
+R43
+!i113 1
 R15
+R16
 Emrstd
 R1
 R2
@@ -286,9 +296,9 @@ R7
 R8
 R9
 l0
-L547
-V?Q;JN<0j]DPDYRgk;5=nV2
-!s100 Yj_IOYd4Pg=9SYLLm33RM3
+L548
+VAfZ;80OK<XPbR]<hU[^]92
+!s100 JAz9HUNU_J;Tbz?YZSnIR1
 R10
 32
 R11
@@ -296,136 +306,141 @@ R11
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
-Amrstd
-R26
-R3
 R16
-R33
+Amrstd
+R28
+R3
+R17
+R36
 R2
 R5
 R6
-R27
+R29
+l560
+L556
+VfF:8ciJW@c0gQO9zgFm:D3
+!s100 :U0LEKOBjnI]Z9oNndYmC3
+R10
 32
 R11
-l559
-L555
-VJnCc^K0OabVddj:hOXLcU1
-!s100 cOjRU5FkbHS`^mP_fRR9_3
-R10
 !i10b 1
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Emultiplica
-R34
+R37
 R3
 R4
 R5
 R6
 R7
-R35
-R36
+R38
+R39
 l0
 L12
-VkR`YH8Q:C>A4]_Qz^z?i11
+VHSaBFPOGX6j:5YLFmm@em2
 !s100 ;]]WATfI5BNC3I=bHZzia2
 R10
 32
-R37
-!i10b 1
-R38
-R39
 R40
-!i113 0
+!i10b 1
 R41
+R42
+R43
+!i113 1
 R15
+R16
 Amultiplica
 R3
 R4
 R5
 R6
-R30
-32
-R37
+R33
 l30
 L21
-V[gOoLA[b7C[Xm;jeZ`b9D3
+VF[;Cm`eMEH=9jMIlgVME80
 !s100 DG;WUgC9z@<`HGa[6ioa[3
 R10
-!i10b 1
-R38
-R39
+32
 R40
-!i113 0
+!i10b 1
 R41
+R42
+R43
+!i113 1
 R15
+R16
 Pp_mrstd
 R5
 R6
-32
-R11
 R1
 R7
 R8
 R9
 l0
 L26
-VC[EGjnWE`G[JR1Ucgm31C0
-!s100 <dD5:J`zX<kac^]=92AOC3
+VlTV5?7Y1^^1@RX2aceAez3
+!s100 a;G5bIDb@_3:gLg@o;04L1
 R10
+32
+R11
 !i10b 1
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Eram_mem
-R18
-R25
+R19
+R24
 R3
 R4
 R5
 R6
 R7
-R19
 R20
+R21
 l0
 L102
-V8KQg9Ejen7:^N>dXPK=Pc3
+Vb;=AX=znSJhE1d2Q>iC;92
 !s100 hM;QP]SnmkSloQc[KKWGz2
 R10
 32
-R21
+R11
 !i10b 1
+R12
 R22
 R23
-R24
-!i113 0
+!i113 1
 R15
+R16
 Aram_mem
-R25
+R24
 R3
 R4
 R5
 R6
-R28
-32
-R21
+R30
 l111
 L107
-VIY<WKU>DbY7<Dkdkk67FK1
-!s100 g6g13hScCIf2Yf1RI;BIH0
+Z44 VnYo?Vhi97j>[bM8LUf<oZ1
+Z45 !s100 g6g13hScCIf2Yf1RI;BIH0
 R10
+32
+R11
 !i10b 1
+R12
 R22
 R23
-R24
-!i113 0
+!i113 1
 R15
+R16
 Ereg_bank
 R1
 R2
@@ -438,7 +453,7 @@ R8
 R9
 l0
 L90
-VB>iTc@R4[@C:TjDTEYSYP1
+V[Ch8LTZ49j5[BW`mWoBKE3
 !s100 8KH9^>5b_1`bn^hcCbUic1
 R10
 32
@@ -447,29 +462,31 @@ R11
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Areg_bank
-R32
+R35
 R2
 R3
 R4
 R5
 R6
-R31
-32
-R11
+R34
 l102
 L98
-VlDSlK>NSzV=V]Tdl5Ye8S0
+V3?I9f27QVG9UP?;;e@1VP3
 !s100 dhBgMWmQU@cZ1JfAJ>Jok2
 R10
+32
+R11
 !i10b 1
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Eregnbit
 R1
 R5
@@ -479,7 +496,7 @@ R8
 R9
 l0
 L58
-V3GAV^@e6L>ATdUZgQQQh90
+V=]RB>=o_a<NgT@Dcl<P263
 !s100 h7dNZ[2L88oUXz>`Zj6Q;1
 R10
 32
@@ -488,22 +505,24 @@ R11
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16
 Aregn
 R5
 R6
-R32
-32
-R11
+R35
 l67
 L66
-V1f?LC4BHiCHc`1`P6FHKO0
+VkkKCXOZ;lnF;0O]<0Eleg3
 !s100 mf7AK8^YJC;@>;m<][TzQ0
 R10
+32
+R11
 !i10b 1
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
+R16

@@ -1,0 +1,22 @@
+ Address    Code        Basic                     Source
+
+0x00400000  0x3c011001  lui $1,4097           4    	la  $s0,fib_value  #Carrega endereço do vetor vazio
+0x00400004  0x34300000  ori $16,$1,0               
+0x00400008  0x3c011001  lui $1,4097           5    	la  $s1, size 	   #Carrega endereço do tamanho do vetor
+0x0040000c  0x3431004c  ori $17,$1,76              
+0x00400010  0x8e320000  lw $18,0($17)         6    	lw  $s2, 0($s1)    #Carrega o tamanho do vetor 
+0x00400014  0x25080000  addiu $8,$8,0         7    	addiu $t0,$t0,0	   #Inicializa o primeiro valor da sequência: 0
+0x00400018  0x25290001  addiu $9,$9,1         8    	addiu $t1,$t1,1	   #Inicializa o segundo valor da sequência: 1
+0x0040001c  0x256b0000  addiu $11,$11,0       9    	addiu $t3,$t3,0 	   #Inicializa o indice que vai ser usado pra controle
+0x00400020  0xae080000  sw $8,0($16)          10   	sw   $t0,0($s0)    #Inclui o primeiro valor do vetor no mesmo
+0x00400024  0xae090004  sw $9,4($16)          11   	sw   $t1,4($s0)    #Inclui o segundo valor do vetor no mesmo
+0x00400028  0x11720007  beq $11,$18,7         13   loop:	beq $t3,$s2,fim	   #Verifica se o indice de controle é igual ao tamanho do vetor
+0x0040002c  0x8e080000  lw $8,0($16)          14   	lw $t0,0($s0)	   #Carrega valor n-2 
+0x00400030  0x8e090004  lw $9,4($16)          15   	lw $t1,4($s0)	   #Carrega o valor n-1
+0x00400034  0x01095021  addu $10,$8,$9        16   	addu $t2,$t0,$t1    #Executa a soma dos dois valores
+0x00400038  0xae0a0008  sw $10,8($16)         17   	sw $t2,8($s0)	   #Coloca o resultado da soma no vetor
+0x0040003c  0x26100004  addiu $16,$16,4       18   	addiu $s0,$s0,4	   #Incrementa a posição do vetor
+0x00400040  0x256b0001  addiu $11,$11,1       19   	addiu $t3,$t3,1	   #Incrementa indice de controle
+0x00400044  0x0810000a  j 0x00400028          20   	j loop
+0x00400048  0x2402000a  addiu $2,$0,10        23   	li $v0,10
+0x0040004c  0x0000000c  syscall               24   	syscall

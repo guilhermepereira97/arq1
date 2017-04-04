@@ -160,7 +160,6 @@ begin
     menorS <=  '1' when ieee.Std_Logic_signed."<"(op1,  op2) else '0' ; -- signed
     
     outalu <= 
-        P 
         op1 - op2                                when  op_alu=SUBU                     else
         op1 and op2                              when  op_alu=AAND  or op_alu=ANDI     else 
         op1 or  op2                              when  op_alu=OOR   or op_alu=ORI      else 
@@ -396,7 +395,7 @@ begin
     -- BLOCK (1/3) - INSTRUCTION DECODING and ALU operation definition.
     -- This block generates 1 Output Function of the Control Unit
     ----------------------------------------------------------------------------------------
-    i <=   NOP when IR(31 downto 0)=x"0000000000000000" else
+    i <=   NOP when ir(31 downto 0) = "00000000000000000000000000000000" else
 	   ADDU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100001" else
            SUBU   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100011" else
            AAND   when ir(31 downto 26)="000000" and ir(10 downto 0)="00000100100" else
